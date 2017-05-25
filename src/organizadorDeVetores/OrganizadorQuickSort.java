@@ -6,6 +6,7 @@ public class OrganizadorQuickSort {
     private int length;
     
     public static void OrganizarVetor(int[] vetorDeNumerosInteiros){
+    	
     	OrganizadorQuickSort OQS = new OrganizadorQuickSort();
     	
     	OQS.organizarUsandoQuickSort(vetorDeNumerosInteiros);
@@ -13,13 +14,14 @@ public class OrganizadorQuickSort {
     }
     
     public void organizarUsandoQuickSort(int[] inputArr) {
-         
+    	         
         if (inputArr == null || inputArr.length == 0) {
             return;
         }
         this.array = inputArr;
         length = inputArr.length;
         quickSort(0, length - 1);
+       
     }
 
     private void quickSort(int lowerIndex, int higherIndex) {
